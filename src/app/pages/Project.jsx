@@ -32,7 +32,28 @@ const Project = () => {
         />
       </div>
 
-      <div className="grid justify-center items-center gap-4 grid-cols-4 w-full">
+      <div className="grid justify-center items-center gap-4 grid-cols-4 w-full max-md:hidden mt-5">
+        <a href="https://mohammedawaiz.netlify.app/" target="_blank">
+          <PixelCard className="bg-P1 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://businessexamplewebsite.netlify.app/" target="_blank">
+          <PixelCard className="bg-P2 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://ecelljmi.in/" target="_blank">
+          <PixelCard className="bg-P7 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://vslip.netlify.app/" target="_blank">
+          <PixelCard className="bg-P3 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://porfoliowebsiteexample.netlify.app/" target="_blank">
+          <PixelCard className="bg-P4 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://fjenterpries.netlify.app/" target="_blank">
+          <PixelCard className="bg-P5 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://tesla2clone.netlify.app/" target="_blank">
+          <PixelCard className="bg-P6 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
         <a href="https://mohammedawaiz.netlify.app/" target="_blank">
           <PixelCard className="bg-P1 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
         </a>
@@ -44,6 +65,32 @@ const Project = () => {
         </a>
         <a href="https://porfoliowebsiteexample.netlify.app/" target="_blank">
           <PixelCard className="bg-P4 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://fjenterpries.netlify.app/" target="_blank">
+          <PixelCard className="bg-P5 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://tesla2clone.netlify.app/" target="_blank">
+          <PixelCard className="bg-P6 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+      </div>
+
+      {/* Mobile View */}
+      <div className="hidden justify-center items-center gap-4 grid-cols-4 w-full max-md:flex max-md:flex-wrap mt-5">
+        <a href="https://mohammedawaiz.netlify.app/" target="_blank">
+          <PixelCard className="bg-P1 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://businessexamplewebsite.netlify.app/" target="_blank">
+          <PixelCard className="bg-P2 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://vslip.netlify.app/" target="_blank">
+          <PixelCard className="bg-P3 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+        <a href="https://porfoliowebsiteexample.netlify.app/" target="_blank">
+          <PixelCard className="bg-P4 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
+        </a>
+
+        <a href="https://ecelljmi.in/" target="_blank">
+          <PixelCard className="bg-P7 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />
         </a>
         <a href="https://fjenterpries.netlify.app/" target="_blank">
           <PixelCard className="bg-P5 bg-no-repeat bg-cover w-[40vh] h-[20vh] cursor-pointer " />

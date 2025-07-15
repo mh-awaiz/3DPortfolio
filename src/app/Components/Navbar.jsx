@@ -10,7 +10,6 @@ import Link from "next/link";
 //Animation
 import GlareHover from "../Animation/GlareHover.jsx";
 import { motion } from "motion/react";
-// import MetallicPaint, { parseLogoImage } from "../Animation/MetallicPaint.jsx";
 
 const Navbar = () => {
   //Toggle
@@ -55,7 +54,7 @@ const Navbar = () => {
       initial={{ y: -5, opacity: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="flex justify-between items-center text-sm font-medium w-full  py-5 px-20 max-lg:px-10 bg-backgroundColor "
+      className="flex justify-between items-center text-sm font-medium w-full  py-5 px-20 max-lg:px-10 bg-backgroundColor"
     >
       
         <Link href="/">
@@ -89,7 +88,7 @@ const Navbar = () => {
         </Link>
 
         {/* Mobile View */}
-        <div className="hidden max-lg:flex">
+        <div className="hidden max-lg:flex justify-end items-center w-full">
           {toggle ? (
             <IoCloseSharp
               size={25}
@@ -112,15 +111,8 @@ const Navbar = () => {
 
       <div
         ref={navRef}
-        className="hidden flex-col justify-center items-center top-20 right-1 left-1 bg-backgroundColor text-center  rounded-lg shadow-sm shadow-highlight"
+        className="hidden max-lg:absolute flex-col justify-center items-center top-20 right-1 left-1 bg-backgroundColor text-center  rounded-lg shadow-sm shadow-highlight w-full "
       >
-        {/* <Navlink
-          href="/"
-          section="Home"
-          navRef={navRef}
-          toggle={toggle}
-          setToggle={setToggle}
-        /> */}
         <Navlink
           href="#about"
           section="About"

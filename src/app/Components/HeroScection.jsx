@@ -28,7 +28,7 @@ const HeroScection = () => {
       <motion.div
         initial={{ x: -10, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1  }}
+        transition={{ duration: 1 }}
         className="w-[150vw]"
       >
         <ShinyText
@@ -40,11 +40,12 @@ const HeroScection = () => {
         <TypewriterText />
       </motion.div>
 
+      {/* Animation */}
       <motion.div
         initial={{ x: 10, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="absolute  h-[100vh] w-full z-0"
+        className="absolute  h-[100vh] w-full z-0 max-md:hidden"
       >
         <Canvas
           camera={{ position: [2, 1.5, 3], fov: 35 }}
@@ -57,24 +58,11 @@ const HeroScection = () => {
         </Canvas>
       </motion.div>
 
-      {/* 
-      <div className=" overflow-x-hidden   fixed inset-0 -z-10">
-        <Canvas
-          className="w-full h-full"
-          camera={{ position: [2, 1.5, 3], fov: 35 }}
-        >
-          <Suspense fallback={null}>
-            <Man position={[-50, -200, -200]} />
-            <Environment preset="city" />
-          </Suspense>
-        </Canvas>
-      </div> */}
-
       <motion.div
         initial={{ x: -10, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 3, delay: 1 }}
-        className="px-1 py-2 border-2 border-cta  text-cta absolute rounded-md  mt-[35vh] animate-bounce hover:bg-cta hover:text-white transition-all duration-300 ease-in-out cursor-pointer left-[50vw] "
+        className="px-1 py-2 border-2 border-cta  text-cta absolute rounded-md  mt-[35vh] animate-bounce hover:bg-cta hover:text-white transition-all duration-300 ease-in-out cursor-pointer left-[50vw] max-md:left-[46vw]"
       >
         <Link to="about" smooth={true} duration={500}>
           <FaArrowDownLong />

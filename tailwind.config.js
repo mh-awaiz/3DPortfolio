@@ -40,6 +40,7 @@ export default {
         P4: "url('/project/P4.jpg')",
         P5: "url('/project/P5.jpg')",
         P6: "url('/project/P6.jpg')",
+        P7: "url('/project/P7.jpg')",
         blackOverlays:
           "linear-gradient(360deg, hsla(255, 92%, 76%, 1) 0%, hsla(0, 0%, 0%, 1) 30%)",
       },

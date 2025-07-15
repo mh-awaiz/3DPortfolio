@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutText = () => {
   return (
-    <p className="font-semibold text-center text-pretty text-para first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:text-highlight">
+    <p className="font-semibold text-center text-para first-letter:text-highlight">
       Passionate about crafting engaging digital experiences through beautiful
       and functional user interfaces! Hi! I'm a Front-End Web Developer with a
       flair for transforming ideas into interactive, live applications. I

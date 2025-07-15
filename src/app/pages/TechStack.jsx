@@ -152,7 +152,7 @@ const TechStack = () => {
   return (
     <section
       id="techstack"
-      className="min-h-screen text-heading flex flex-col justify-center items-start"
+      className="min-h-screen text-heading flex flex-col justify-center items-start py-20"
     >
       {/* <SplashCursor /> */}
 
@@ -160,7 +160,7 @@ const TechStack = () => {
         <BlurText
           text="My Tech-Stack"
           // delay={150}
-          duration={2}
+          duration={1}
           animateBy="words"
           direction="top"
           className="text-lg text-highlight"
@@ -169,7 +169,7 @@ const TechStack = () => {
         <BlurText
           text="This is how magic takes place"
           // delay={150}
-          duration={2}
+          duration={1}
           animateBy="words"
           direction="top"
           className="text-2xl text-heading"
@@ -178,7 +178,7 @@ const TechStack = () => {
       </div>
 
       <div className="flex justify-evenly items-center w-full">
-        <div className="h-[80vh] w-full absolute">
+        <div className="h-[80vh] w-full absolute max-md:hidden">
           <Canvas
             // camera={{ position: [30, 20, 20], fov: 35 }}
             className=" z-0 "
@@ -191,12 +191,12 @@ const TechStack = () => {
           </Canvas>
         </div>
 
-        <div className="flex justify-between items-center w-full mt-20  flex-wrap">
+        <div className="flex flex-row justify-between items-center w-full mt-20 flex-wrap max-md:flex-col max-md:mt-10">
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="z-10"
+            className="z-10 "
           >
             <ShinyText
               text={
@@ -211,7 +211,7 @@ const TechStack = () => {
             <div style={{ position: "relative" }}>
               <GlassIcons
                 items={items1}
-                className="custom-class grid-cols-3 h-auto"
+                className="custom-class grid-cols-3 h-auto "
               />
             </div>
           </motion.div>

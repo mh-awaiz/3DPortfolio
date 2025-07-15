@@ -5,6 +5,7 @@ import BlurText from "../Animation/BlurText";
 import GlareHover from "../Animation/GlareHover";
 import Particles from "../Animation/Particles.jsx";
 import "../globals.css";
+import { motion } from "motion/react";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -92,7 +93,7 @@ const Contact = () => {
             <BlurText
               text="Contact Us"
               // delay={150}
-              duration={2}
+              duration={1}
               animateBy="words"
               direction="top"
               className="text-lg text-highlight"
@@ -101,7 +102,7 @@ const Contact = () => {
             <BlurText
               text="Your words matter to us."
               // delay={150}
-              duration={2}
+              duration={1}
               animateBy="words"
               direction="top"
               className="text-2xl text-heading"
@@ -109,86 +110,96 @@ const Contact = () => {
             />
           </div>
 
-          <form
-            ref={formRef}
-            onSubmit={() => handleSubmit}
-            className=" w-auto flex flex-col  justify-center rounded-md gap-3"
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5 }}
           >
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value={name}
-              cols={60}
-              placeholder="Name"
-              onChange={(e) => setName(e.target.value)}
-              className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
-                name
-                  ? "border-cta text-cta"
-                  : "border-highlight text-heading appearance-none focus:ring-0"
-              }`}
-              required
-            />
-
-            <input
-              type="email"
-              name="email"
-              id="email"
-              value={email}
-              cols={60}
-              placeholder="Phone Number"
-              onChange={(e) => setEmail(e.target.value)}
-              className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
-                email ? "border-cta text-cta" : "border-highlight text-heading"
-              }`}
-              required
-            />
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              value={phone}
-              cols={60}
-              placeholder="Phone Number"
-              onChange={(e) => setPhone(e.target.value)}
-              className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
-                phone ? "border-cta text-cta" : "border-highlight text-heading"
-              }`}
-              required
-            />
-            <textarea
-              name="message"
-              id="message"
-              value={message}
-              cols={60}
-              rows={5}
-              placeholder="How can we help you..."
-              onChange={(e) => setMessage(e.target.value)}
-              className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
-                message
-                  ? "border-cta text-cta"
-                  : "border-highlight text-heading"
-              }`}
-              required
-            ></textarea>
-
-            <GlareHover
-              glareColor="#ffffff"
-              glareOpacity={0.3}
-              glareAngle={-30}
-              glareSize={300}
-              transitionDuration={800}
-              playOnce={false}
+            <form
+              ref={formRef}
+              onSubmit={() => handleSubmit}
+              className=" w-auto flex flex-col  justify-center rounded-md gap-3 max-md:mt-5"
             >
-              <button
-                type="submit"
-                className="p-5 bg-cta rounded-md text-heading font-semibold border border-cta hover:bg-backgroundColor hover:text-cta duration-300 transition-all w-full"
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value={name}
+                cols={60}
+                placeholder="Name"
+                onChange={(e) => setName(e.target.value)}
+                className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
+                  name
+                    ? "border-cta text-cta"
+                    : "border-highlight text-heading appearance-none focus:ring-0"
+                }`}
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value={email}
+                cols={60}
+                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+                className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
+                  email
+                    ? "border-cta text-cta"
+                    : "border-highlight text-heading"
+                }`}
+                required
+              />
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                value={phone}
+                cols={60}
+                placeholder="Phone Number"
+                onChange={(e) => setPhone(e.target.value)}
+                className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
+                  phone
+                    ? "border-cta text-cta"
+                    : "border-highlight text-heading"
+                }`}
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                value={message}
+                cols={60}
+                rows={5}
+                placeholder="How can we help you..."
+                onChange={(e) => setMessage(e.target.value)}
+                className={`p-5 w-full text-cta font-semibold bg-transparent border  rounded-md outline-none         ${
+                  message
+                    ? "border-cta text-cta"
+                    : "border-highlight text-heading"
+                }`}
+                required
+              ></textarea>
+
+              <GlareHover
+                glareColor="#ffffff"
+                glareOpacity={0.3}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
               >
-                Submit
-              </button>
-              <p class="text-base text-center text-gray-400" id="result" />
-            </GlareHover>
-          </form>
+                <button
+                  type="submit"
+                  className="p-5 bg-cta rounded-md text-heading font-semibold border border-cta hover:bg-backgroundColor hover:text-cta duration-300 transition-all w-full"
+                >
+                  Submit
+                </button>
+                <p className="text-base text-center text-gray-400" id="result" />
+              </GlareHover>
+            </form>
+          </motion.div>
         </div>
         <p
           className="text-base text-center text-heading  z-10"

@@ -10,7 +10,7 @@ const TypewriterText = () => {
   });
 
   return (
-    <h1 className="text-6xl font-bold text-cta">
+    <h1 className="text-6xl font-bold text-cta max-md:text-xl">
       <span className="text-heading">I'm a</span> {text}
       <span className="cursor">|</span>
     </h1>

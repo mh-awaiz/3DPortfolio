@@ -3,6 +3,8 @@
 import React from "react";
 import BlurText from "../Animation/BlurText";
 import ServiceCard from "../Components/ServiceCard";
+import { motion } from "motion/react";
+
 
 // Icon
 import { BiWorld } from "react-icons/bi";
@@ -19,7 +21,7 @@ const Service = () => {
         <BlurText
           text="My Services"
           // delay={150}
-          duration={2}
+          duration={1}
           animateBy="words"
           direction="top"
           className="text-lg text-highlight"
@@ -28,7 +30,7 @@ const Service = () => {
         <BlurText
           text="We provide the best for you"
           // delay={150}
-          duration={2}
+          duration={1}
           animateBy="words"
           direction="top"
           className="text-2xl text-heading"
@@ -36,7 +38,12 @@ const Service = () => {
         />
       </div>
 
-      <div className="flex flex-row justify-center items-centermt flex-wrap">
+      <motion.div
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1}}
+        className="flex justify-center items-center max-md:flex-wrap"
+      >
         <ServiceCard
           heading="Online Presence"
           para="
@@ -67,7 +74,7 @@ const Service = () => {
           "
           icon={<TbPigMoney size={45} />}
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

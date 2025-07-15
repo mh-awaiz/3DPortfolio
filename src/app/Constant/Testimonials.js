@@ -12,7 +12,7 @@ const Testimonials = [
       <FaStar />
     )}`,
     feedback:
-      "Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application.",
+      "Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application. Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application.",
   },
   {
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
