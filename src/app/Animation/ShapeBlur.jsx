@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 

@@ -6,7 +6,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaInstagram,
-  FaUserCircle,
 } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiUpwork } from "react-icons/si";

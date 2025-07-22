@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import TypewriterText from "../Components/TypewriterText.jsx";
+import TypewriterText from "./TypewriterText.jsx";
 import { Link } from "react-scroll";
 
 //Animation

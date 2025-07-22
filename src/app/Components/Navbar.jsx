@@ -140,9 +140,11 @@ const Navbar = () => {
         transitionDuration={800}
         playOnce={false}
       >
-        <button className="text-heading text-sm font-semibold border-2 border-cta bg-cta px-7 py-2 rounded hover:bg-backgroundColor hover:text-cta duration-200 transition-all max-lg:hidden">
-          Lets Work
-        </button>
+        <a href="https://www.fiverr.com/mhawaiz/" target="_blank">
+          <button className="text-heading text-sm font-semibold border-2 border-cta bg-cta px-7 py-2 rounded hover:bg-backgroundColor hover:text-cta duration-200 transition-all max-lg:hidden">
+            Lets Work
+          </button>
+        </a>
       </GlareHover>
     </motion.nav>
   );

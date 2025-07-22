@@ -5,7 +5,6 @@ import Testimonials from "../Constant/Testimonials.js";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import "../globals.css";
-import { motion } from "motion/react";
 
 //Animation
 import BlurText from "../Animation/BlurText.jsx";
