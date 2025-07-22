@@ -17,6 +17,16 @@ export default function RootLayout({ children }) {
           name="This is my Portfolio website which made using Next.js and Tailwind CSS"
           content="Welcome to my portfolio website!!!"
         />
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D732XM553N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D732XM553N');
+</script>
       </Head>
       <body className={spaceGrotesk.className}>
         <div className="bg-backgroundColor overflow-x-hidden">
