@@ -93,19 +93,20 @@ const Navbar = () => {
           setToggle={setToggle}
         />
         <Navlink
-          href="#project"
-          section="Projects"
-          navRef={navRef}
-          toggle={toggle}
-          setToggle={setToggle}
-        />
-        <Navlink
           href="#techstack"
           section="Tech Stack"
           navRef={navRef}
           toggle={toggle}
           setToggle={setToggle}
         />
+        <Navlink
+          href="#project"
+          section="Projects"
+          navRef={navRef}
+          toggle={toggle}
+          setToggle={setToggle}
+        />
+
         <Navlink
           href="#testimonial"
           section="Testimonial"
@@ -125,8 +126,8 @@ const Navbar = () => {
       <div className="flex gap-5 max-lg:hidden">
         <Navlink href="#about" section="About" />
         <Navlink href="#service" section="Service" />
-        <Navlink href="#project" section="Projects" />
         <Navlink href="#techstack" section="Tech Stack" />
+        <Navlink href="#project" section="Projects" />
         <Navlink href="#testimonial" section="Testimonial" />
         <Navlink href="#contact" section="Contact" />
       </div>

@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <About />
-      <TechStack />
       <Service />
+      <TechStack />
       <Project />
       <Testimonial />
       <Contact />

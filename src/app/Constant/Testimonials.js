@@ -6,23 +6,22 @@ import { FaStar } from "react-icons/fa6";
 const Testimonials = [
   {
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
-    name: "Bonnie Green",
-    position: "CTO at Flowbite",
+    name: "Abudl Rehman",
+    position: "Client",
     star: `${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(
       <FaStar />
     )}`,
-    feedback:
-      "Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application. Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application.",
+    feedback: "Great work fast delivery 👍🏻",
   },
   {
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
-    name: "Mohammed Awaiz",
-    position: "CEO at Multimedia",
+    name: "V Slip",
+    position: "Client",
     star: `${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(
       <FaStar />
     )}`,
     feedback:
-      "Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application.",
+      "I recently had the pleasure of working with Awaiz on the development of my portfolio website, and I couldn't be more satisfied with the outcome. From start to finish, Awaiz demonstrated a high level of professionalism, creativity, and technical expertise that resulted in a stunning and functional website.",
   },
   {
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
@@ -37,12 +36,11 @@ const Testimonials = [
   {
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png",
     name: "Arfan Sheik",
-    position: "Head of Marketing",
+    position: "Client",
     star: `${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(<FaStar />)}${(
       <FaStar />
     )}`,
-    feedback:
-      "Flowbite is just awesome. It contains tons of predesignedcomponents and pages starting from login screen to complexdashboard. Perfect choice for your next SaaS application.",
+    feedback: "On ios any browser its working perfectly fine.",
   },
 ];
 
