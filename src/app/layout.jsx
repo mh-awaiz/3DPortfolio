@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -17,16 +18,20 @@ export default function RootLayout({ children }) {
           name="This is my Portfolio website which made using Next.js and Tailwind CSS"
           content="Welcome to my portfolio website!!!"
         />
-
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D732XM553N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D732XM553N');
-</script>
+        {/* Google Analytics Script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-D732XM553N"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-D732XM553N');
+          `}
+        </Script>
       </Head>
       <body className={spaceGrotesk.className}>
         <div className="bg-backgroundColor overflow-x-hidden">
