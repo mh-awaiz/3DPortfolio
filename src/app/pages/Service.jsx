@@ -5,7 +5,6 @@ import BlurText from "../Animation/BlurText";
 import ServiceCard from "../Components/ServiceCard";
 import { motion } from "motion/react";
 
-
 // Icon
 import { BiWorld } from "react-icons/bi";
 import { MdBookOnline } from "react-icons/md";
@@ -41,37 +40,23 @@ const Service = () => {
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1}}
+        transition={{ duration: 1 }}
         className="flex justify-center items-center max-md:flex-wrap"
       >
         <ServiceCard
           heading="Online Presence"
-          para="
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est
-            aliquam eveniet beatae aperiam nihil odio officia quae unde ex
-            recusandae voluptatum libero repellendus nulla quod, maxime enim
-            quas iure.
-          "
+          para=" We help you establish a compelling digital presence with sleek, modern, and engaging websites tailored to your brand and business goals. "
           icon={<BiWorld size={45} />}
         />
         <ServiceCard
           heading="Responsive Platform"
-          para="
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est
-            aliquam eveniet beatae aperiam nihil odio officia quae unde ex
-            recusandae voluptatum libero repellendus nulla quod, maxime enim
-            quas iure.
+          para="Our websites adapt flawlessly to all devices, ensuring a seamless and interactive experience for your users across desktops, tablets, and smartphones.
           "
           icon={<MdBookOnline size={45} />}
         />
         <ServiceCard
           heading="Affordable Rates"
-          para="
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est
-            aliquam eveniet beatae aperiam nihil odio officia quae unde ex
-            recusandae voluptatum libero repellendus nulla quod, maxime enim
-            quas iure.
-          "
+          para="Get premium web development services at budget-friendly prices—perfect for startups, small businesses, and freelancers looking to grow online."
           icon={<TbPigMoney size={45} />}
         />
       </motion.div>

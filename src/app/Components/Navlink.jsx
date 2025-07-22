@@ -16,7 +16,7 @@ const Navlink = ({ href, section, navRef, toggle, setToggle }) => {
   };
   return (
     <Link
-      className="text-heading hover:text-primary hover:underline hover:underline-offset-8  duration-300 transition-all max-lg:p-2 max-lg:hover:bg-slate-950  max-lg:hover:no-underline max-lg:w-full hover:cursor-pointer"
+      className="text-heading hover:text-primary hover:underline hover:underline-offset-8  duration-300 transition-all max-lg:p-2 max-lg:hover:bg-slate-950  max-lg:hover:no-underline max-lg:w-full hover:cursor-pointer max-lg:px-10 max-lg:py-[2vh]"
       href={href}
       onClick={() => {
         handleClose();

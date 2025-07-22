@@ -18,10 +18,12 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import HeroText from "./HeroText.jsx";
 
 const HeroScection = () => {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 1000;
+
   return (
     <div
       id="/"
-      className="home min-h-screen w-full flex justify-between items-center overflow-x-hidden pl-20 max-lg:pl-10 bg-backgroundColor"
+      className="home h-screen w-full flex justify-between items-center overflow-x-hidden bg-backgroundColor"
     >
       {/* w-[150vw] */}
 
@@ -44,11 +46,11 @@ const HeroScection = () => {
       <motion.div
         initial={{ x: 10, opacity: 0 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className="absolute  h-[100vh] w-full z-0 max-md:hidden"
+        transition={{ duration: 2, delay: 1 }}
+        className="absolute h-[100vh] w-full z-0 max-sm:w-[400px] max-sm:h-[400px] overflow-hidden max-md:-z-0"
       >
         <Canvas
-          camera={{ position: [2, 1.5, 3], fov: 35 }}
+          camera={{ position: isMobile ? [1.5, 1, 3] : [2.5, 1.5, 3], fov: 35 }}
           className="w-full h-full z-0"
         >
           <Suspense fallback={null}>

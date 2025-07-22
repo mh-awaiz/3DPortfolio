@@ -178,7 +178,7 @@ const TechStack = () => {
       </div>
 
       <div className="flex justify-evenly items-center w-full">
-        <div className="h-[80vh] w-full absolute max-md:hidden">
+        <div className="h-[80vh] w-full absolute ">
           <Canvas
             // camera={{ position: [30, 20, 20], fov: 35 }}
             className=" z-0 "
@@ -190,6 +190,8 @@ const TechStack = () => {
             </Suspense>
           </Canvas>
         </div>
+
+        {/* Animation Mobile Viewport */}
 
         <div className="flex flex-row justify-between items-center w-full mt-20 flex-wrap max-md:flex-col max-md:mt-10">
           <motion.div

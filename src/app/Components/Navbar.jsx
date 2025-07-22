@@ -29,26 +29,6 @@ const Navbar = () => {
     return navRef;
   };
 
-  //Logo Animation
-  // const [imageData, setImageData] = (useState < ImageData) | (null > null);
-
-  // useEffect(() => {
-  //   async function loadDefaultImage() {
-  //     try {
-  //       const response = await fetch(logo);
-  //       const blob = await response.blob();
-  //       const file = new File([blob], "default.png", { type: blob.type });
-
-  //       const parsedData = await parseLogoImage(file);
-  //       setImageData(parsedData?.imageData ?? null);
-  //     } catch (err) {
-  //       console.error("Error loading default image:", err);
-  //     }
-  //   }
-
-  //   loadDefaultImage();
-  // }, []);
-
   return (
     <motion.nav
       initial={{ y: -5, opacity: 0 }}
@@ -56,62 +36,47 @@ const Navbar = () => {
       transition={{ duration: 1 }}
       className="flex justify-between items-center text-sm font-medium w-full  py-5 px-20 max-lg:px-10 bg-backgroundColor"
     >
-      
-        <Link href="/">
-          <Image
-            src="/Logo.png"
-            alt="Nav Logo"
-            width={40}
-            height={40}
-            className="rounded-md max-lg:hidden hover:cursor-pointer"
-          />
-          <Image
-            src="/Logo.png"
-            alt="Nav Logo"
-            width={25}
-            height={25}
-            className="hidden rounded-md max-lg:flex hover:cursor-pointer"
-          />
-          {/* <div style={{ width: "100%", height: "100vh" }}>
-          <MetallicPaint
-            imageData={imageData ?? new ImageData(1, 1)}
-            params={{
-              edge: 2,
-              patternBlur: 0.005,
-              patternScale: 2,
-              refraction: 0.015,
-              speed: 0.3,
-              liquid: 0.07,
+      <Link href="/">
+        <Image
+          src="/Logo.png"
+          alt="Nav Logo"
+          width={40}
+          height={40}
+          className="rounded-md max-lg:hidden hover:cursor-pointer"
+        />
+        <Image
+          src="/Logo.png"
+          alt="Nav Logo"
+          width={25}
+          height={25}
+          className="hidden rounded-md max-lg:flex hover:cursor-pointer"
+        />
+      </Link>
+
+      {/* Mobile View */}
+      <div className="hidden max-lg:flex justify-end items-center w-full">
+        {toggle ? (
+          <IoCloseSharp
+            size={25}
+            className="text-heading cursor-pointer"
+            onClick={() => {
+              handleToggle();
             }}
           />
-        </div> */}
-        </Link>
-
-        {/* Mobile View */}
-        <div className="hidden max-lg:flex justify-end items-center w-full">
-          {toggle ? (
-            <IoCloseSharp
-              size={25}
-              className="text-heading cursor-pointer"
-              onClick={() => {
-                handleToggle();
-              }}
-            />
-          ) : (
-            <GiHamburgerMenu
-              size={25}
-              className="text-heading cursor-pointer"
-              onClick={() => {
-                handleToggle();
-              }}
-            />
-          )}
-        </div>
-    
+        ) : (
+          <GiHamburgerMenu
+            size={25}
+            className="text-heading cursor-pointer"
+            onClick={() => {
+              handleToggle();
+            }}
+          />
+        )}
+      </div>
 
       <div
         ref={navRef}
-        className="hidden max-lg:absolute flex-col justify-center items-center top-20 right-1 left-1 bg-backgroundColor text-center  rounded-lg shadow-sm shadow-highlight w-full "
+        className="hidden max-lg:absolute flex-col justify-center items-center z-10 bg-backgroundColor text-center  rounded-lg shadow-sm shadow-highlight w-auto transition-all duration-300 ease-in-out left-10 right-10 top-20"
       >
         <Navlink
           href="#about"
@@ -158,7 +123,6 @@ const Navbar = () => {
       </div>
 
       <div className="flex gap-5 max-lg:hidden">
-        {/* <Navlink href="/" section="Home" /> */}
         <Navlink href="#about" section="About" />
         <Navlink href="#service" section="Service" />
         <Navlink href="#project" section="Projects" />

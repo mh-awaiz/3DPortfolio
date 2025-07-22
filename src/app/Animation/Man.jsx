@@ -4,7 +4,6 @@ import React, { useRef, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Man(props) {
@@ -12,18 +11,7 @@ export default function Man(props) {
 
   const ManRef = useRef();
 
-  // useEffect(() => {
-  //   const model = ManRef.current;
-  //   if (!model) return;
-  //   // Initial position
-  //   gsap.fromTo(
-  //     ManRef.current.position,
-  //     { x: 0, y: 0, z: -500 }, // starting position
-  //     { x: -70, y: -220, z: -250, duration: 1, ease: "power2.inOut" } // final
-  //   );
-  // }, []);
-
-   useEffect(() => {
+  useEffect(() => {
     const model = ManRef.current;
 
     if (!model) return;
@@ -38,14 +26,12 @@ export default function Man(props) {
       z: -700,
       scrollTrigger: {
         trigger: ".home",
-        start: "top center", 
-        // end: "bottom center",
+        start: "top center",
         scrub: true,
       },
       ease: "power2.inOut",
     });
   }, []);
-
 
   return (
     <group {...props} dispose={null} ref={ManRef}>

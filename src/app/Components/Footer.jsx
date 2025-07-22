@@ -9,6 +9,8 @@ import {
   FaUserCircle,
 } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
+import { SiUpwork } from "react-icons/si";
+
 import Icons from "./Icons";
 
 const Footer = () => {
@@ -51,20 +53,20 @@ const Footer = () => {
             icon={<FaGithub size={20} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.linkedin.com/in/-mohammed-awaiz/"
             icon={<FaLinkedin size={20} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.instagram.com/awaiz167/"
             icon={<FaInstagram size={20} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.fiverr.com/mhawaiz/"
             icon={<TbBrandFiverr size={20} />}
           />
           <Icons
-            href="https://github.com/awaiz"
-            icon={<FaUserCircle size={20} />}
+            href="https://www.fiverr.com/mhawaiz/"
+            icon={<SiUpwork size={20} />}
           />
         </div>
 
@@ -75,20 +77,20 @@ const Footer = () => {
             icon={<FaGithub size={15} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.linkedin.com/in/-mohammed-awaiz/"
             icon={<FaLinkedin size={15} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.instagram.com/awaiz167/"
             icon={<FaInstagram size={15} />}
           />
           <Icons
-            href="https://github.com/awaiz"
+            href="https://www.fiverr.com/mhawaiz/"
             icon={<TbBrandFiverr size={15} />}
           />
           <Icons
-            href="https://github.com/awaiz"
-            icon={<FaUserCircle size={15} />}
+            href="https://www.fiverr.com/mhawaiz/"
+            icon={<SiUpwork size={15} />}
           />
         </div>
       </div>

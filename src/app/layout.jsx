@@ -22,8 +22,9 @@ export default function RootLayout({ children }) {
       <body className={spaceGrotesk.className}>
         <div className="bg-backgroundColor overflow-x-hidden">
           <Navbar />
-          <HeroScection />
+
           <main className="bg-backgroundColor min-h-screen overflow-x-hidden selection:bg-highlight selection:text-para relative px-20 max-lg:px-10">
+            <HeroScection />
             {children}
           </main>
           <Footer />
