@@ -1,4 +1,5 @@
 import { GoogleTagManager } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
