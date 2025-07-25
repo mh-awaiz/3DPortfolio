@@ -1,4 +1,5 @@
 import { GoogleTagManager } from "@next/third-parties/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -28,9 +29,10 @@ export default function RootLayout({ children }) {
 
           <main className="bg-backgroundColor min-h-screen overflow-x-hidden selection:bg-highlight selection:text-para relative px-20 max-lg:px-10">
             {children}
+            <Analytics />
+            <SpeedInsights />
           </main>
           <Footer />
-          <Analytics />
         </div>
       </body>
     </html>
