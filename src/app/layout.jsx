@@ -7,24 +7,23 @@ import "./globals.css";
 // Components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Head from "next/head";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="MRBYKHpOA65wMeP5_F7ZjyPSpcijC_-SxoyV_VgfRkM"
+        />
         <title>Mohammed Awaiz</title>
         <meta
           name="This is my Portfolio website which made using Next.js and Tailwind CSS"
           content="Welcome to my portfolio website!!!"
         />
-        <meta
-          name="google-site-verification"
-          content="MRBYKHpOA65wMeP5_F7ZjyPSpcijC_-SxoyV_VgfRkM"
-        />
-      </Head>
+      </head>
 
       <body className={spaceGrotesk.className}>
         <GoogleTagManager gtmId="G-D732XM553N" />
