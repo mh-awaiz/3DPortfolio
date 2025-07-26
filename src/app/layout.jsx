@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
           name="This is my Portfolio website which made using Next.js and Tailwind CSS"
           content="Welcome to my portfolio website!!!"
         />
+        <meta
+          name="google-site-verification"
+          content="MRBYKHpOA65wMeP5_F7ZjyPSpcijC_-SxoyV_VgfRkM"
+        />
       </Head>
 
       <body className={spaceGrotesk.className}>

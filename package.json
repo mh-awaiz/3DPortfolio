@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "flowbite-react patch"
+    "postinstall": "flowbite-react patch",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/third-parties": "^15.4.3",
@@ -20,6 +21,7 @@
     "gsap": "^3.13.0",
     "motion": "^12.18.1",
     "next": "^15.4.3",
+    "next-sitemap": "^4.2.3",
     "ogl": "^1.0.11",
     "postprocessing": "^6.37.6",
     "react": "^19.0.0",
