@@ -1,6 +1,7 @@
 "use client";
 
 import React, { Suspense } from "react";
+import Head from "next/head";
 
 //Icon
 import { SiNextdotjs } from "react-icons/si";
@@ -150,97 +151,116 @@ const TechStack = () => {
   ];
 
   return (
-    <section
-      id="techstack"
-      className="min-h-screen text-heading flex flex-col justify-center items-start py-20"
-    >
-      {/* <SplashCursor /> */}
-
-      <div className="flex flex-col justify-center items-start z-10">
-        <BlurText
-          text="My Tech-Stack"
-          // delay={150}
-          duration={1}
-          animateBy="words"
-          direction="top"
-          className="text-lg text-highlight"
-          animateOn="view"
+    <>
+      <Head>
+        <title>Tech Stack | Mohammed Awaiz Developer Portfolio</title>
+        <meta
+          name="description"
+          content="Explore the technologies and tools used by Mohammed Awaiz including React, Next.js, Node.js, and more."
         />
-        <BlurText
-          text="This is how magic takes place"
-          // delay={150}
-          duration={1}
-          animateBy="words"
-          direction="top"
-          className="text-2xl text-heading"
-          animateOn="view"
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Tech Stack - Mohammed Awaiz" />
+        <meta
+          property="og:description"
+          content="Get to know the full technology stack powering Mohammed Awaiz’s portfolio and projects."
         />
-      </div>
+      </Head>
 
-      <div className="flex justify-evenly items-center w-full">
-        <div className="h-[80vh] w-full absolute ">
-          <Canvas
-            // camera={{ position: [30, 20, 20], fov: 35 }}
-            className=" z-0 "
-          >
-            <Suspense fallback={null}>
-              <Computer position={[1, 0, 3]} />
-              {/* <OrbitControls /> */}
-              <Environment preset="city" />
-            </Suspense>
-          </Canvas>
+      <section
+        id="techstack"
+        className="min-h-screen text-heading flex flex-col justify-center items-start py-20"
+      >
+        {/* <SplashCursor /> */}
+
+        <div className="flex flex-col justify-center items-start z-10">
+          <BlurText
+            text="My Tech-Stack"
+            // delay={150}
+            duration={1}
+            animateBy="words"
+            direction="top"
+            className="text-lg text-highlight"
+            animateOn="view"
+          />
+          <BlurText
+            text="This is how magic takes place"
+            // delay={150}
+            duration={1}
+            animateBy="words"
+            direction="top"
+            className="text-2xl text-heading"
+            animateOn="view"
+          />
         </div>
 
-        {/* Animation Mobile Viewport */}
+        <div className="flex justify-evenly items-center w-full">
+          <div className="h-[80vh] w-full absolute ">
+            <Canvas
+              // camera={{ position: [30, 20, 20], fov: 35 }}
+              className=" z-0 "
+            >
+              <Suspense fallback={null}>
+                <Computer position={[1, 0, 3]} />
+                {/* <OrbitControls /> */}
+                <Environment preset="city" />
+              </Suspense>
+            </Canvas>
+          </div>
 
-        <div className="flex flex-row justify-between items-center w-full mt-20 flex-wrap max-md:flex-col max-md:mt-10">
-          <motion.div
-            initial={{ x: -20, opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="z-10 "
-          >
-            <ShinyText
-              text={
-                <h3 className="font-semibold text-cta text-xl">
-                  Front-End Technologies
-                </h3>
-              }
-              disabled={false}
-              speed={3}
-              className="custom-class text-xl"
-            />
-            <div style={{ position: "relative" }}>
-              <GlassIcons
-                items={items1}
-                className="custom-class grid-cols-3 h-auto "
+          {/* Animation Mobile Viewport */}
+
+          <div className="flex flex-row justify-between items-center w-full mt-20 flex-wrap max-md:flex-col max-md:mt-10">
+            <motion.div
+              initial={{ x: -20, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="z-10 "
+            >
+              <ShinyText
+                text={
+                  <h3 className="font-semibold text-cta text-xl">
+                    Front-End Technologies
+                  </h3>
+                }
+                disabled={false}
+                speed={3}
+                className="custom-class text-xl"
               />
-            </div>
-          </motion.div>
+              <div style={{ position: "relative" }}>
+                <GlassIcons
+                  items={items1}
+                  className="custom-class grid-cols-3 h-auto "
+                />
+              </div>
+            </motion.div>
 
-          <motion.div
-            initial={{ x: 20, opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="z-10"
-          >
-            <ShinyText
-              text={
-                <h3 className="font-semibold text-cta text-xl">
-                  Back-End Technologies
-                </h3>
-              }
-              disabled={false}
-              speed={3}
-              className="custom-class text-xl"
-            />
-            <div style={{ position: "relative" }}>
-              <GlassIcons items={items2} className="custom-class grid-cols-3" />
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ x: 20, opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              className="z-10"
+            >
+              <ShinyText
+                text={
+                  <h3 className="font-semibold text-cta text-xl">
+                    Back-End Technologies
+                  </h3>
+                }
+                disabled={false}
+                speed={3}
+                className="custom-class text-xl"
+              />
+              <div style={{ position: "relative" }}>
+                <GlassIcons
+                  items={items2}
+                  className="custom-class grid-cols-3"
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

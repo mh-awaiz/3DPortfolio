@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
@@ -13,7 +14,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <meta
           name="google-site-verification"
           content="MRBYKHpOA65wMeP5_F7ZjyPSpcijC_-SxoyV_VgfRkM"
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
           name="This is my Portfolio website which made using Next.js and Tailwind CSS"
           content="Welcome to my portfolio website!!!"
         />
-      </head>
+      </Head>
 
       <body className={spaceGrotesk.className}>
         <GoogleTagManager gtmId="G-D732XM553N" />
