@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={spaceGrotesk.className}>
-        <GoogleAnalytics gtmId="G-D732XM553N" />
+        <GoogleAnalytics gaId="G-D732XM553N" />
         <div className="bg-backgroundColor overflow-x-hidden">
           <Navbar />
 
@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gaId="G-D732XM553N" />
     </html>
   );
 }

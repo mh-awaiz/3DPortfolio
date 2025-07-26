@@ -28,7 +28,7 @@ const Service = () => {
           content="See what Mohammed Awaiz can build for your business. High-quality web development services tailored to your needs."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="service"

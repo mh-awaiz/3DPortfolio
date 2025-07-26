@@ -26,7 +26,7 @@ const about = () => {
           content="Discover the story and skills of Mohammed Awaiz, full-stack developer and creative technologist."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="about"

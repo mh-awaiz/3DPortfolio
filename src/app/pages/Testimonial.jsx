@@ -47,7 +47,7 @@ const Testimonial = () => {
           content="Real reviews and feedback from people who’ve worked with Mohammed Awaiz on web development projects."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="testimonial"

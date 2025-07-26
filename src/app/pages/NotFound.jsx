@@ -13,7 +13,7 @@ export default function NotFound() {
         />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <div className="flex flex-col items-center justify-center h-screen text-center px-4 bg-backgroundColor text-para">
         <h1 className="text-5xl font-bold text-highlight">404</h1>

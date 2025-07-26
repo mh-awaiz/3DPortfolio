@@ -85,7 +85,7 @@ const Contact = () => {
           content="Reach out to Mohammed Awaiz for collaborations, web development projects, or freelance work."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="contact"

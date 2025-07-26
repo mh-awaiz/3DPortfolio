@@ -166,7 +166,7 @@ const TechStack = () => {
           content="Get to know the full technology stack powering Mohammed Awaiz’s portfolio and projects."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="techstack"

@@ -47,7 +47,7 @@ const Project = () => {
           content="Browse past work and creative web solutions crafted by Mohammed Awaiz."
         />
       </Head>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
+      <GoogleAnalytics gaId="G-D732XM553N" />
 
       <section
         id="project"
