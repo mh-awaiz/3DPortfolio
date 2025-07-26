@@ -9,7 +9,6 @@ import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 
-
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
@@ -28,6 +27,7 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body className={spaceGrotesk.className}>
+        <GoogleAnalytics gtmId="G-D732XM553N" />
         <div className="bg-backgroundColor overflow-x-hidden">
           <Navbar />
 
@@ -39,7 +39,6 @@ export default function RootLayout({ children }) {
           <Footer />
         </div>
       </body>
-      <GoogleAnalytics gtmId="G-D732XM553N" />
     </html>
   );
 }
