@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
 import Testimonials from "../Constant/Testimonials.js";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -9,7 +10,6 @@ import "../globals.css";
 
 //Animation
 import BlurText from "../Animation/BlurText.jsx";
-import { GoogleAnalytics } from "@next/third-parties/google.js";
 
 const Testimonial = () => {
   const [current, setCurrent] = useState(0);
