@@ -1,11 +1,21 @@
 # 🌐 Awaiz's 3D Portfolio Website
 
+
 [![Live Website](https://img.shields.io/badge/Live-Demo-green?style=flat-square&logo=vercel)](https://mohammedawaiz.vercel.app/)
 [![GitHub Stars](https://img.shields.io/github/stars/mh-awaiz/3DPortfolio?style=social)](https://github.com/mh-awaiz/3DPortfolio/stargazers)
+
+
+
 
 Welcome to my **interactive 3D developer portfolio**! This website serves as a personal showcase for my web development expertise, combining cutting-edge frontend technologies, 3D visuals, smooth animations, and responsive design—all built with `Next.js`.
 
 ---
+
+## 🚀 Live Preview
+
+[![Website Preview](https://mohammedawaiz.vercel.app/screenshot.png)](https://mohammedawaiz.vercel.app)
+
+Explore my portfolio: [mohammedawaiz.vercel.app](https://mohammedawaiz.vercel.app)
 
 ## ✨ Features
 
