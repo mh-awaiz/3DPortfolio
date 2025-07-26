@@ -5,6 +5,7 @@ import Head from "next/head";
 import BlurText from "../Animation/BlurText";
 import "../../app/globals.css";
 import PixelCard from "../Animation/PixelCard";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const Project = () => {
   const [expand, setExpand] = useState(false);
@@ -46,6 +47,7 @@ const Project = () => {
           content="Browse past work and creative web solutions crafted by Mohammed Awaiz."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="project"

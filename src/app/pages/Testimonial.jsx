@@ -9,6 +9,7 @@ import "../globals.css";
 
 //Animation
 import BlurText from "../Animation/BlurText.jsx";
+import { GoogleAnalytics } from "@next/third-parties/google.js";
 
 const Testimonial = () => {
   const [current, setCurrent] = useState(0);
@@ -46,6 +47,7 @@ const Testimonial = () => {
           content="Real reviews and feedback from people who’ve worked with Mohammed Awaiz on web development projects."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="testimonial"

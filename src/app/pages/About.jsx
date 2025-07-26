@@ -4,6 +4,7 @@ import React from "react";
 import Head from "next/head";
 import AboutText from "../Components/AboutText.jsx";
 import { Link } from "react-scroll";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 //Animation
 import ProfileCard from "../Animation/ProfileCard.jsx";
@@ -25,6 +26,7 @@ const about = () => {
           content="Discover the story and skills of Mohammed Awaiz, full-stack developer and creative technologist."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="about"

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function NotFound() {
   return (
@@ -12,6 +13,7 @@ export default function NotFound() {
         />
         <meta name="robots" content="noindex, nofollow" />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <div className="flex flex-col items-center justify-center h-screen text-center px-4 bg-backgroundColor text-para">
         <h1 className="text-5xl font-bold text-highlight">404</h1>

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import { Space_Grotesk } from "next/font/google";
@@ -8,6 +8,7 @@ import "./globals.css";
 // Components
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -27,7 +28,6 @@ export default function RootLayout({ children }) {
       </Head>
 
       <body className={spaceGrotesk.className}>
-        <GoogleTagManager gtmId="G-D732XM553N" />
         <div className="bg-backgroundColor overflow-x-hidden">
           <Navbar />
 
@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
     </html>
   );
 }

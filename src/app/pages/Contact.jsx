@@ -7,6 +7,7 @@ import GlareHover from "../Animation/GlareHover";
 import Particles from "../Animation/Particles.jsx";
 import "../globals.css";
 import { motion } from "motion/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -84,6 +85,7 @@ const Contact = () => {
           content="Reach out to Mohammed Awaiz for collaborations, web development projects, or freelance work."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="contact"

@@ -10,6 +10,7 @@ import { motion } from "motion/react";
 import { BiWorld } from "react-icons/bi";
 import { MdBookOnline } from "react-icons/md";
 import { TbPigMoney } from "react-icons/tb";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const Service = () => {
   return (
@@ -27,6 +28,7 @@ const Service = () => {
           content="See what Mohammed Awaiz can build for your business. High-quality web development services tailored to your needs."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="service"

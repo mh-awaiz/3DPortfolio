@@ -24,6 +24,7 @@ import ShinyText from "../Animation/ShinyText";
 import { Canvas } from "@react-three/fiber";
 import { Computer } from "../Animation/Computer";
 import { Environment, OrbitControls } from "@react-three/drei";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const TechStack = () => {
   const items1 = [
@@ -165,6 +166,7 @@ const TechStack = () => {
           content="Get to know the full technology stack powering Mohammed Awaiz’s portfolio and projects."
         />
       </Head>
+      <GoogleAnalytics gtmId="G-D732XM553N" />
 
       <section
         id="techstack"
