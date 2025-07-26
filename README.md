@@ -17,6 +17,8 @@ Welcome to my **interactive 3D developer portfolio**! This website serves as a p
 
 Explore my portfolio: [mohammedawaiz.vercel.app](https://mohammedawaiz.vercel.app)
 
+---
+
 ## ✨ Features
 
 - 🚀 **Next.js 15** – React-based full-stack framework for performance & scalability
